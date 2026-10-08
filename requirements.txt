@@ -1,0 +1,15 @@
+numpy==2.5.3
+pandas==3.0.6
+matplotlib==3.11.2
+seaborn==0.13.2
+scikit-learn==1.9.1
+xgboost==3.4.1
+scipy==1.18.1
+joblib==1.6.0
+pydantic==2.13.5
+pydantic-settings==2.15.0
+PyYAML==6.0.3
+fastapi==0.142.2
+uvicorn==0.54.0
+requests==2.34.2
+streamlit==1.64.0
