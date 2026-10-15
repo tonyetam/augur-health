@@ -1,0 +1,22 @@
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile.backend
+    image: augur-backend
+    env_file:
+      - .env.docker
+    ports:
+      - "8000:8000"
+
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile.frontend
+    image: augur-frontend
+    environment:
+      - API_URL=http://backend:8000/api/predict
+    ports:
+      - "8501:8501"
+    depends_on:
+      - backend
